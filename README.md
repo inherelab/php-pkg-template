@@ -20,7 +20,7 @@ composer require inherelab/php-pkg-template
 - clone this repository to local
 - update readme description
 - search all `inherelab/php-pkg-template` and replace to your package name.
-- replace `composer.json` contents: name, description, require, autoload
+- update `composer.json` contents: name, description, require, autoload
 
 ## License
 
