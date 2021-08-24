@@ -17,7 +17,12 @@
   },
   "autoload": {
     "psr-4": {
-      "PkgOwner\\PkgName\\": "src/"
+      "InhereLab\\PhpPkg\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "InhereLab\\PhpPkgTest\\": "test/"
     }
   },
   "bin": [
