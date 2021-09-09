@@ -12,4 +12,19 @@ use PHPUnit\Framework\TestCase;
 abstract class BaseTestCase extends TestCase
 {
 
+    /**
+     * @param callable $cb
+     *
+     * @return Throwable
+     */
+    protected function runAndGetException(callable $cb): Throwable
+    {
+        try {
+            $cb();
+        } catch (Throwable $e) {
+            return $e;
+        }
+
+        return new RuntimeException('NO ERROR');
+    }
 }
