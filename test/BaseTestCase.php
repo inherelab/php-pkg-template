@@ -5,6 +5,8 @@ namespace InhereLab\PhpPkgTest;
 use PHPUnit\Framework\TestCase;
 use ReflectionException;
 use ReflectionMethod;
+use RuntimeException;
+use Throwable;
 
 /**
  * Class BaseTestCase
@@ -20,10 +22,10 @@ abstract class BaseTestCase extends TestCase
      * usage:
      *
      * ```php
-     * $rftMth = $this->method($className, $protectedOrPrivateMethod)
+     * $rftMth = $this->method(SomeClass::class, $protectedOrPrivateMethod)
      *
-     * $obj = new $className();
-     * $res = $rftMth->invokeArgs($obj, $invokeArgs);
+     * $obj = new SomeClass();
+     * $ret = $rftMth->invokeArgs($obj, $invokeArgs);
      * ```
      *
      * @param string|object $class
@@ -37,7 +39,7 @@ abstract class BaseTestCase extends TestCase
         // $class  = new \ReflectionClass($class);
         // $method = $class->getMethod($method);
 
-        $method = new \ReflectionMethod($class, $method);
+        $method = new ReflectionMethod($class, $method);
         $method->setAccessible(true);
 
         return $method;
@@ -56,6 +58,6 @@ abstract class BaseTestCase extends TestCase
             return $e;
         }
 
-        return new RuntimeException('NO ERROR');
+        return new RuntimeException('NO ERROR', -1);
     }
 }
