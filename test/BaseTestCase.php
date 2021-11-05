@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace InhereLab\PhpPkgTest;
+namespace InhereLab\DemoPkgTest;
 
 use PHPUnit\Framework\TestCase;
 use ReflectionException;
@@ -11,7 +11,7 @@ use Throwable;
 /**
  * Class BaseTestCase
  *
- * @package InhereLab\PhpPkgTest
+ * @package InhereLab\DemoPkgTest
  */
 abstract class BaseTestCase extends TestCase
 {

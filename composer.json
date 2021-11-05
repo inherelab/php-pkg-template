@@ -17,12 +17,12 @@
   },
   "autoload": {
     "psr-4": {
-      "InhereLab\\PhpPkg\\": "src/"
+      "InhereLab\\DemoPkg\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "InhereLab\\PhpPkgTest\\": "test/"
+      "InhereLab\\DemoPkgTest\\": "test/"
     }
   },
   "bin": [
