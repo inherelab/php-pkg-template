@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "php": ">7.1.0",
+    "php": ">7.4.0",
     "ext-mbstring": "*",
     "toolkit/cli-utils":"~1.0"
   },
@@ -26,7 +26,7 @@
     }
   },
   "bin": [
-    
+
   ],
   "scripts": {
     "test": "php vender/bin/phpunit"
