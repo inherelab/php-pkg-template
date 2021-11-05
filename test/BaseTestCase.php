@@ -1,13 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace Toolkit\PFlagTest;
+namespace InhereLab\PhpPkgTest;
 
 use PHPUnit\Framework\TestCase;
+use ReflectionException;
+use ReflectionMethod;
 
 /**
  * Class BaseTestCase
  *
- * @package Toolkit\PFlagTest
+ * @package InhereLab\PhpPkgTest
  */
 abstract class BaseTestCase extends TestCase
 {
@@ -34,7 +36,7 @@ abstract class BaseTestCase extends TestCase
     {
         // $class  = new \ReflectionClass($class);
         // $method = $class->getMethod($method);
-        
+
         $method = new \ReflectionMethod($class, $method);
         $method->setAccessible(true);
 
