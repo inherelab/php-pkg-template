@@ -39,10 +39,10 @@ abstract class BaseTestCase extends TestCase
         // $class  = new \ReflectionClass($class);
         // $method = $class->getMethod($method);
 
-        $method = new ReflectionMethod($class, $method);
-        $method->setAccessible(true);
+        $refMth = new ReflectionMethod($class, $method);
+        $refMth->setAccessible(true);
 
-        return $method;
+        return $refMth;
     }
 
     /**
