@@ -1,9 +1,13 @@
 {
   "name": "inherelab/php-pkg-template",
   "description": "TODO: package description",
-  "type": "template",
+  "type": "library",
   "license": "MIT",
   "homepage": "https://github.com/inherelab/php-pkg-template",
+  "keywords": [
+    "library",
+    "tool"
+  ],
   "authors": [
     {
       "name": "inhere",
