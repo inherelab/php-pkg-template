@@ -17,7 +17,7 @@
   "require": {
     "php": ">7.4.0",
     "ext-mbstring": "*",
-    "toolkit/stdlib":"~1.0"
+    "toolkit/stdlib":"~1.0 || ~2.0"
   },
   "autoload": {
     "psr-4": {
